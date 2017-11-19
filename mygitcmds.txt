@@ -1,0 +1,46 @@
+Git hirarchy 
+  -->Global
+    -->User
+      --> repository
+
+
+#To list all the global configs (if gloabl not specified it will configure in repository level)
+git config --global --list
+git config --global user.email "usename@email.com"
+git config --global user.name "Aditya"
+git config --global color.ui auto
+git config --global help.autocorrect 1
+
+cat ~/.gitconfig
+
+git config --global --unset color.ui
+
+vi .git/config
+
+
+---
+git init
+
+git add <filename>
+git commit -m 'New Commit line'
+
+Latest commit is known as HEAD
+#To see most recent commit
+git show HEAD
+
+#To diff previous commit to current commit
+git diff HEAD~1..HEAD
+
+# To show all commits 
+git log
+
+#To show commit logs in oneline
+git log --oneline
+
+# To show graphical view
+git log --graph
+
+# To show shotlog
+git shortlog
+
+git shortlog -sne
